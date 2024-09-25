@@ -1,11 +1,13 @@
-import Image from "next/image";
 import Section from "./components/section";
 import Navbar from "./components/navbar";
+import HeroHeader from "./components/heroHeader";
 
 export default function Home() {
   return (
     <header>
-    <Navbar></Navbar>
+    <Navbar/>
+    <HeroHeader/>
+
       <Section style={'lol'}>
       </Section>
     </header>

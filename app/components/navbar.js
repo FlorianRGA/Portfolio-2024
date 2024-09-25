@@ -1,9 +1,8 @@
 'use client'
-import {useEffect, useState} from "react";
+import {useState} from "react";
 import Image from "next/image";
-import GithubSVG from "../svg/github-svgrepo-com.svg";
-import LinkedinSVG from "../svg/linkedin-icon-svgrepo-com.svg";
-import CrossSVG from "../svg/cross-svgrepo-com.svg";
+import GithubSVG from "../media/svg/github-svgrepo-com.svg";
+import LinkedinSVG from "../media/svg/linkedin-icon-svgrepo-com.svg";
 
 export default function Navbar() {
     const [burgerButton, setburgerButton] = useState(0);
@@ -21,7 +20,7 @@ export default function Navbar() {
                 <span className={burgerButton ?"transition-all w-full relative bottom-1 h-1 rounded-full bg-white origin-center -rotate-45":"transition-all bg-white  rounded-full w-full mt-1 h-1"}></span>
             </button>
         </div>
-        <ul className={burgerButton ? "text-gray-300 flex flex-col h-2/4 ms-10 space-y-10 md:ms-0 md:text-center md:justify-between md:content-center md:space-y-0": 'hidden lg:text-gray-300 lg:flex lg:flex-row lg:items-center lg:space-x-4'}>
+        <ul className={burgerButton ? "text-gray-300 flex flex-col h-2/4 ms-10 space-y-10 md:ms-0 md:text-center md:justify-between md:content-center md:space-y-0": 'hidden lg:text-gray-300 lg:flex lg:flex-row lg:items-center lg:space-x-5'}>
             <li>
                 <a href="#">Introduction</a>
             </li>
@@ -37,10 +36,10 @@ export default function Navbar() {
         </ul>
         <ul className={burgerButton ? "flex mb-7 justify-center": "hidden lg:flex lg:items-center lg:ms-8"}>
             <li className="w-12 mx-4 md:w-14 lg:w-8 lg:mx-2">
-                <a href="#" target="_blank"><Image src={LinkedinSVG} layout="responsive" alt="Logo Github"/></a>
+                <a href="#" target="_blank"><Image src={LinkedinSVG}  alt="Logo Github"/></a>
             </li>
             <li className="w-12 mx-4 md:w-14 lg:w-8 lg:mx-2">
-                <a href="https://github.com/FlorianRGA" target="_blank"><Image src={GithubSVG} layout="responsive" alt="Logo Linkedin"/></a>
+                <a href="https://github.com/FlorianRGA" target="_blank"><Image src={GithubSVG}  alt="Logo Linkedin"/></a>
             </li>
         </ul>
     </div> </nav>
