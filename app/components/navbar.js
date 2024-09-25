@@ -12,7 +12,7 @@ export default function Navbar() {
         + add href destination.
         + Burger Menu On phone/tablet media
         Opt : add logo
-         */ <nav className = {burgerButton ?"h-screen w-screen text-slate-50 text-2xl fixed bg-zinc-900 md:text-3xl lg:hidden" :"h-auto bg-zinc-900 sticky top-0 text-slate-50 md:text-3xl "}> <div className="flex h-full flex-col justify-between lg:flex-row lg:m-auto lg:w-5/6 lg:text-xl">
+         */ <nav className = {burgerButton ?"h-screen w-screen text-slate-50 text-2xl fixed bg-zinc-900 md:text-3xl lg:hidden z-10" :"h-auto bg-zinc-900 sticky top-0 text-slate-50 md:text-3xl z-10"}> <div className="flex h-full flex-col justify-between lg:flex-row lg:m-auto lg:w-5/6 lg:text-xl">
         <div className="flex py-6 my-0 w-5/6 m-auto justify-between">
             <p className="text-center text-2xl lg:text-xl">Florian Roche</p>
             <button onClick={() => burgerButton ? setburgerButton(0) : setburgerButton(1)} className="w-8 flex flex-col justify-center lg:hidden">
@@ -22,7 +22,7 @@ export default function Navbar() {
         </div>
         <ul className={burgerButton ? "text-gray-300 flex flex-col h-2/4 ms-10 space-y-10 md:ms-0 md:text-center md:justify-between md:content-center md:space-y-0": 'hidden lg:text-gray-300 lg:flex lg:flex-row lg:items-center lg:space-x-5'}>
             <li>
-                <a href="#">Introduction</a>
+                <a href="#header">Introduction</a>
             </li>
             <li>
                 <a href="#">Projets</a>
@@ -36,10 +36,10 @@ export default function Navbar() {
         </ul>
         <ul className={burgerButton ? "flex mb-7 justify-center": "hidden lg:flex lg:items-center lg:ms-8"}>
             <li className="w-12 mx-4 md:w-14 lg:w-8 lg:mx-2">
-                <a href="#" target="_blank"><Image src={LinkedinSVG}  alt="Logo Github"/></a>
+                <a href="#" target="_blank"><Image src={LinkedinSVG}  alt="Lien vers Linkedin"/></a>
             </li>
             <li className="w-12 mx-4 md:w-14 lg:w-8 lg:mx-2">
-                <a href="https://github.com/FlorianRGA" target="_blank"><Image src={GithubSVG}  alt="Logo Linkedin"/></a>
+                <a href="https://github.com/FlorianRGA" target="_blank"><Image src={GithubSVG}  alt="Lien vers Github"/></a>
             </li>
         </ul>
     </div> </nav>
