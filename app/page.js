@@ -7,9 +7,6 @@ export default function Home() {
     <header>
     <Navbar/>
     <HeroHeader/>
-
-      <Section style={'lol'}>
-      </Section>
     </header>
   );
 }
