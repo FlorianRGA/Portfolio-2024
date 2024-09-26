@@ -12,7 +12,7 @@ export default function Navbar() {
         + add href destination.
         + Burger Menu On phone/tablet media
         Opt : add logo
-         */ <nav className = {burgerButton ?"h-screen w-full text-slate-50 text-2xl fixed z-10 bg-zinc-900 md:text-3xl lg:hidden" :"h-auto bg-purple-900 sticky top-0 text-slate-50 md:text-3xl z-10"}> <div className="flex h-full flex-col justify-between lg:flex-row lg:m-auto lg:w-5/6 lg:text-xl">
+         */ <nav className = {burgerButton ?"h-screen w-full text-slate-50 text-2xl fixed z-10 bg-gray-900 md:text-3xl lg:hidden" :"h-auto bg-gray-900 sticky top-0 text-slate-50 md:text-3xl z-10"}> <div className="flex h-full flex-col justify-between lg:flex-row lg:m-auto lg:w-5/6 lg:text-xl">
         <div className="flex py-6 my-0 w-5/6 m-auto justify-between">
             <p className="text-center text-2xl lg:text-xl">Florian Roche</p>
             <button onClick={() => burgerButton ? setburgerButton(0) : setburgerButton(1)} className="w-8 flex flex-col justify-center lg:hidden">
