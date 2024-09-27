@@ -12,9 +12,9 @@ export default function Navbar() {
         + add href destination.
         + Burger Menu On phone/tablet media
         Opt : add logo
-         */ <nav className = {burgerButton ?"h-screen w-full text-slate-50 text-2xl fixed z-10 bg-gray-900 md:text-3xl lg:hidden" :"h-auto bg-gray-900 sticky top-0 text-slate-50 md:text-3xl z-10"}> <div className="flex h-full flex-col justify-between lg:flex-row lg:m-auto lg:w-5/6 lg:text-xl">
+         */ <nav className = {burgerButton ?"h-screen w-full text-slate-50 text-xl fixed z-10 bg-gray-900 md:text-3xl lg:hidden" :"h-auto bg-gray-900 sticky top-0 text-slate-50 md:text-3xl z-10"}> <div className="flex h-full flex-col justify-between lg:flex-row lg:m-auto lg:w-5/6 lg:text-lg">
         <div className="flex py-6 my-0 w-5/6 m-auto justify-between">
-            <p className="text-center text-2xl lg:text-xl">Florian Roche</p>
+            <p className="text-center text-xl lg:text-lg">Florian Roche</p>
             <button onClick={() => burgerButton ? setburgerButton(0) : setburgerButton(1)} className="w-8 flex flex-col justify-center lg:hidden">
                 <span className={burgerButton ?"transition-all w-full relative h-1 rounded-full bg-white origin-center rotate-45":"transition-all bg-white  rounded-full w-full h-1 "}></span>
                 <span className={burgerButton ?"transition-all w-full relative bottom-1 h-1 rounded-full bg-white origin-center -rotate-45":"transition-all bg-white  rounded-full w-full mt-1 h-1"}></span>
