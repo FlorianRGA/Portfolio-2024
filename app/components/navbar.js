@@ -12,7 +12,7 @@ export default function Navbar() {
         + add href destination.
         + Burger Menu On phone/tablet media
         Opt : add logo
-         */ <nav className = {burgerButton ?"h-screen w-full text-slate-50 text-xl fixed z-10 bg-gray-900 md:text-3xl lg:hidden" :"h-auto bg-gray-900 sticky top-0 text-slate-50 md:text-3xl z-10"}> <div className="flex h-full flex-col justify-between lg:flex-row lg:m-auto lg:w-5/6 lg:text-lg">
+         */ <nav className = {burgerButton ?"h-screen w-full text-slate-50 text-xl fixed z-10 bg-black md:text-3xl lg:hidden" :"h-auto bg-black sticky top-0 text-slate-50 md:text-3xl z-10"}> <div className="flex h-full flex-col justify-between lg:flex-row lg:m-auto lg:w-5/6 lg:text-lg">
         <div className="flex py-6 my-0 w-5/6 m-auto justify-between">
             <p className="text-center text-xl lg:text-lg">Florian Roche</p>
             <button onClick={() => burgerButton ? setburgerButton(0) : setburgerButton(1)} className="w-8 flex flex-col justify-center lg:hidden">
@@ -22,7 +22,7 @@ export default function Navbar() {
         </div>
         <ul className={burgerButton ? "text-gray-300 flex flex-col h-2/4 ms-10 space-y-10 md:ms-0 md:text-center md:justify-between md:content-center md:space-y-0 md:space-x-0": 'hidden lg:text-gray-300 lg:flex lg:flex-row lg:items-center lg:space-x-5'}>
             <li>
-                <a href="#header">Introduction</a>
+                <a className="hover:underline hover:decoration-sky-500 hover:transition-all hover:duration-500 hover:underline-offset-4" href="#header">Introduction</a>
             </li>
             <li>
                 <a href="#">Projets</a>
