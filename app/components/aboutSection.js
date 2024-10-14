@@ -22,19 +22,24 @@ export default function AboutMe() {
                         parturient efficitur suscipit pharetra netus; tellus feugiat magna.</p>
                 </IntersectionEffect>
                 <div className=' space-y-10 mt-10 lg:flex lg:space-y-0'>
+                <IntersectionEffect>
                     <CardComponent alt={'xxx'} title={'lorem'} icon={MusicSvgIcon}>
                         <p>Lorem ipsum odor amet, consectetuer adipiscing
                             elit. Interdum tristique elit nullam sit in enim imperdiet dui.</p>
                     </CardComponent>
+                    </IntersectionEffect>
+                    <IntersectionEffect>
                     <CardComponent alt={'xxx'} title={'lorem'} icon={FitnessSVGIcon}>
                         <p>Lorem ipsum odor amet, consectetuer adipiscing
                             elit. Interdum tristique elit nullam sit in enim imperdiet dui.</p>
                     </CardComponent>
+                    </IntersectionEffect>
+                    <IntersectionEffect>
                     <CardComponent alt={'xxx'} title={'lorem'} icon={ControllerSVGIcon}>
                         <p>Lorem ipsum odor amet, consectetuer adipiscing
                             elit. Interdum tristique elit nullam sit in enim imperdiet dui.</p>
                     </CardComponent>
-
+                    </IntersectionEffect>
                 </div>
             </div>
 

@@ -1,13 +1,19 @@
 import Navbar from "./components/navbar";
 import HeroHeader from "./components/heroHeader";
-import AboutMe from "./components/aboutme";
+import AboutMe from "./components/aboutSection";
+import Slider from "./components/slider";
 
 export default function Home() {
   return (
+    <>
     <header>
     <Navbar/>
     <HeroHeader/>
-    <AboutMe/>
     </header>
+    <main>
+    <AboutMe/>
+    <Slider/>
+    </main>
+    </>
   );
 }
