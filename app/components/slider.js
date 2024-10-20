@@ -30,52 +30,52 @@ export default function Slider() {
             loop
             speed={1100}>
             <SwiperSlide>
-                <div className="h-11 w-11">
+                <div className="h-11 w-11 relative">
                     <Image alt="Logo du framework Symfony" src={HtmlLogo} fill/>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className="h-11 w-11">
+                <div className="h-11 w-11 relative">
                     <Image alt="Logo du framework Symfony" src={CssLogo} fill/>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className="h-11 w-11">
+                <div className="h-11 w-11 relative">
                     <Image alt="Logo du framework Symfony" src={SassLogo} fill/>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className="h-11 w-11">
+                <div className="h-11 w-11 relative">
                     <Image alt="Logo du framework Symfony" src={BootstrapLogo} fill/>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className="h-11 w-11">
+                <div className="h-11 w-11 relative">
                     <Image alt="Logo du framework Symfony" src={TailwindLogo} fill/>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className="h-11 w-11">
+                <div className="h-11 w-11 relative">
                     <Image alt="Logo du framework Symfony" src={JavascriptLogo} fill/>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className="h-11 w-11">
+                <div className="h-11 w-11 relative">
                     <Image alt="Logo du framework Symfony" src={NextLogo} fill/>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className="h-11 w-11">
+                <div className="h-11 w-11 relative">
                     <Image alt="Logo du framework Symfony" src={SymfonyLogo} fill/>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className="h-11 w-11">
+                <div className="h-11 w-11 relative">
                     <Image alt="Logo du framework Symfony" src={WordpressLogo} fill/>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className="h-11 w-11">
+                <div className="h-11 w-11 relative">
                     <Image alt="Logo du framework Symfony" src={GithubLogo} fill/>
                 </div>
             </SwiperSlide>

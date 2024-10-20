@@ -7,13 +7,13 @@ export default function AboutMe() {
     return (
         <section className="bg-black h-auto">
             <div className="flex flex-col items-center pt-4 w-5/6 m-auto">
-                <IntersectionEffect time={"duration-500"}>
+                <IntersectionEffect direction={"y"} time={"duration-500"}>
                     <h2 className="text-slate-50 text-xl md:text-3xl pb-6 pt-5 underline decoration-indigo-300 underline-offset-8">
                         <strong>
                             A PROPOS DE MOI</strong>
                     </h2>
                 </IntersectionEffect>
-                <IntersectionEffect time={"duration-1000"}>
+                <IntersectionEffect direction={"y"} time={"duration-500"}>
                     <p className="text-gray-300 text-justify mt-4 leading-10 text-base md:text-lg pb-8">Lorem
                         ipsum odor amet, consectetuer adipiscing elit. Cubilia sit luctus fringilla
                         pretium porta libero varius eleifend. Rhoncus diam efficitur viverra habitasse
@@ -22,19 +22,19 @@ export default function AboutMe() {
                         parturient efficitur suscipit pharetra netus; tellus feugiat magna.</p>
                 </IntersectionEffect>
                 <div className=' space-y-10 mt-10 lg:flex lg:space-y-0'>
-                <IntersectionEffect>
+                <IntersectionEffect direction={"y"} time={"duration-100"}>
                     <CardComponent alt={'xxx'} title={'lorem'} icon={MusicSvgIcon}>
                         <p>Lorem ipsum odor amet, consectetuer adipiscing
                             elit. Interdum tristique elit nullam sit in enim imperdiet dui.</p>
                     </CardComponent>
                     </IntersectionEffect>
-                    <IntersectionEffect>
+                    <IntersectionEffect direction={"y"} time={"duration-500"}>
                     <CardComponent alt={'xxx'} title={'lorem'} icon={FitnessSVGIcon}>
                         <p>Lorem ipsum odor amet, consectetuer adipiscing
                             elit. Interdum tristique elit nullam sit in enim imperdiet dui.</p>
                     </CardComponent>
                     </IntersectionEffect>
-                    <IntersectionEffect>
+                    <IntersectionEffect direction={"y"} time={"duration-1000"} >
                     <CardComponent alt={'xxx'} title={'lorem'} icon={ControllerSVGIcon}>
                         <p>Lorem ipsum odor amet, consectetuer adipiscing
                             elit. Interdum tristique elit nullam sit in enim imperdiet dui.</p>

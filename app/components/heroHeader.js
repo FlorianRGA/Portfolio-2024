@@ -13,13 +13,13 @@ export default function HeroHeader() {
             </div>
             
             <div className="text-center w-3/4 lg:w-1/2 lg:text-left space-y-3 lg:flex lg:flex-col lg:h-full lg:justify-center">
-            <IntersectionEffect time={"duration-700"}>
+            <IntersectionEffect direction={"y"} time={"duration-700"}>
                 <h1 className="leading-10 text-2xl md:text-4xl lg:text-4xl md:leading-snug md:mb"><strong>Développeur web et web mobile</strong> 
                     <br/>
                     <i className=" text-sky-200 text-xl md:text-3xl lg:text-3xl">Florian Roche</i>
                 </h1>
                 </IntersectionEffect>
-                <IntersectionEffect time={"duration-700"}>
+                <IntersectionEffect direction={"y"} time={"duration-500"}>
                 <p className="text-base leading-8 text-justify md:leading-10 lg:text-left lg:text-lg lg:leading-8 md:text-lg md:pb-8 pb-8 text-gray-300">Avec une passion pour la technologie, je suis prêt à relever de nouveaux défis. À travers des projets pratiques et des compétences en constante évolution, je m&lsquo;engage à créer des solutions innovantes et efficaces. Ensemble, faisons de vos idées une réalité numérique !</p>
                 <a href="#" className="hover:bg-sky-500 border border-sky-300 shadow-sky-900 shadow-md p-3 w-fit rounded-lg hover:transition-all hover:duration-400"><button type="button">Me contacter</button></a>
                 </IntersectionEffect>

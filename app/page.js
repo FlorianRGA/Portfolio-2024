@@ -2,6 +2,7 @@ import Navbar from "./components/navbar";
 import HeroHeader from "./components/heroHeader";
 import AboutMe from "./components/aboutSection";
 import Slider from "./components/slider";
+import ProjectSection from "./components/projectSection";
 
 export default function Home() {
   return (
@@ -12,7 +13,9 @@ export default function Home() {
     </header>
     <main>
     <AboutMe/>
+    <ProjectSection/>
     <Slider/>
+
     </main>
     </>
   );
