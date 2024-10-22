@@ -18,42 +18,48 @@ export default function ProjectSection(){
                     </IntersectionEffect>
                     </div>
                     <div>
-                    <Swiper className='bg-black w-1/2' modules={[Autoplay]}
-                    grabCursor={true}
-                    spaceBetween={5}
+                    <Swiper className='bg-black w-4/6 demoProject' modules={[Autoplay]}
+                    allowTouchMove={false}
+                    grabCursor={false}
+                    spaceBetween={0}
                     slidesPerView={'3'}
+                    centeredSlides={true}
+                    loop
+                    speed={1200}
                     autoplay={{
-                            delay:2000,
-                            disableOnInteraction:false}}>
-                        <SwiperSlide className='shadow-2xl shadow-gray-500/50'>
-                        <div className='w-24 h-96'>
-                            <Image className='border-4 rounded border-slate-00' fill src={AsekurScreenShot} alt=''/>
-                            </div>
+                            delay:3000,
+                            disableOnInteraction:false}}
+                            >
+                        <SwiperSlide>
+                        
+                            <Image className='border border-double rounded h-auto border-slate-200' src={AsekurScreenShot} alt=''/>
+                            <p className='text-center mt-7 text-lg' >hello</p>
                         </SwiperSlide>
-                        <SwiperSlide className='shadow-2xl shadow-gray-500/50'>
-                        <div className='w-24 h-96'>
-                            <Image className='border-4 rounded border-slate-00' fill src={AsekurScreenShot} alt=''/>
-                            </div>
+                        <SwiperSlide>
+                        
+                            <Image className='border border-double rounded h-auto border-slate-200' src={AsekurScreenShot} alt=''/>
+                            <p className='text-center mt-7 text-lg' >hello</p>
                         </SwiperSlide>
-                        <SwiperSlide className='shadow-2xl shadow-gray-500/50'>
-                        <div className='w-24 h-96'>
-                            <Image className='border-4 rounded border-slate-00' fill src={AsekurScreenShot} alt=''/>
-                            </div>
+                        <SwiperSlide>
+                        
+                            <Image className='border border-double rounded h-auto border-slate-200' src={AsekurScreenShot} alt=''/>
+                            <p className='text-center mt-7 text-lg' >hello</p>
                         </SwiperSlide>
-                        <SwiperSlide className='shadow-2xl shadow-gray-500/50'>
-                        <div className='w-24 h-96'>
-                            <Image className='border-4 rounded border-slate-00' fill src={AsekurScreenShot} alt=''/>
-                            </div>
+                        <SwiperSlide>
+                        
+                            <Image className='border border-double rounded h-auto border-slate-200' src={AsekurScreenShot} alt=''/>
+                            <p className='text-center mt-7 text-lg' >hello</p>
                         </SwiperSlide>
-                        <SwiperSlide className='shadow-2xl shadow-gray-500/50'>
-                        <div className='w-24 h-96'>
-                            <Image className='border-4 rounded border-slate-00' fill src={AsekurScreenShot} alt=''/>
-                            </div>
+                        <SwiperSlide>
+                        
+                            <Image className='border border-double rounded h-auto border-slate-200' src={AsekurScreenShot} alt=''/>
+                            <p className='text-center mt-7 text-lg' >hello</p>
                         </SwiperSlide>
-                        <SwiperSlide className='shadow-2xl shadow-gray-500/50'>
-                        <div className='w-24 h-96'>
-                            <Image className='border-4 rounded border-slate-00' fill src={AsekurScreenShot} alt=''/>
-                            </div>
+                        <SwiperSlide>
+                        
+                            <Image className='border border-double rounded h-auto border-slate-200' src={AsekurScreenShot} alt=''/>
+                            
+                            <p className='text-center mt-7 text-lg' >hello</p>
                         </SwiperSlide>
                     </Swiper>
                     </div>
