@@ -5,7 +5,7 @@ import FitnessSVGIcon from '../media/svg/fitness-svgrepo-com.svg';
 import ControllerSVGIcon from '../media/svg/controller-svgrepo-com.svg';
 export default function AboutMe() {
     return (
-        <section className="bg-black h-auto">
+        <section className="bg-black h-auto pb-24">
             <div className="flex flex-col items-center pt-4 w-5/6 m-auto">
                 <IntersectionEffect direction={"y"} time={"duration-500"}>
                     <h2 className="text-slate-50 text-xl md:text-3xl pb-6 pt-5 underline decoration-indigo-300 underline-offset-8">
