@@ -9,16 +9,16 @@ import AsekurScreenShot from "../media/images/asekur.PNG";
 export default function ProjectSection() {
   return (
     <section className="bg-black text-slate-50 h-auto">
-      <div className="flex flex-col items-center pt-4 w-5/6 m-auto ">
+      <div className="flex flex-col items-center pt-4 w-5/6 m-auto">
         <IntersectionEffect time={"duration-500"} direction={"y"}>
-          <h2 className="text-slate-50 text-xl md:text-3xl pb-6 pt-5 underline decoration-indigo-300 underline-offset-8">
+          <h2 className="text-slate-50 text-xl md:text-3xl pb-16 pt-5 underline decoration-indigo-300 underline-offset-8">
             <strong>PORTFOLIO</strong>
           </h2>
         </IntersectionEffect>
       </div>
-      <div className=" hidden md:block lg:block">
+      <div className="hidden md:block lg:block">
         <Swiper
-          className="bg-black w-4/6 demoProject"
+          className="bg-black w-3/6 demoProject"
           modules={[Autoplay]}
           allowTouchMove={false}
           grabCursor={false}
@@ -26,7 +26,7 @@ export default function ProjectSection() {
           slidesPerView={"3"}
           centeredSlides={true}
           loop
-          speed={1200}
+          speed={800}
           autoplay={{
             delay: 3000,
             disableOnInteraction: false,
@@ -82,24 +82,25 @@ export default function ProjectSection() {
             <p className="text-center mt-7 text-lg"></p>
           </SwiperSlide>
         </Swiper>
-        <div className="flex flex-col w-5/6 pt-24 m-auto">
-          <div className="flex m-auto w-2/6">
-            <button className="hover:bg-sky-500 border border-sky-300 shadow-sky-900 shadow-md p-3 w-fit rounded-lg hover:transition-all hover:duration-400">
-              Projets récents
+        <div className="flex flex-col w-5/6 pt-24 m-auto items-center">
+        <h3 className="text-slate-50 text-lg md:text-2xl pb-16 pt-5 underline decoration-indigo-300 underline-offset-8"> Projets réalisés</h3>
+          <div className="w-3/6 flex justify-between">
+            <button className=" hover:bg-slate-50 border border-slate-200 shadow-slate-900 shadow-sm text-white font-bold hover:text-black p-3 w-auto rounded-lg hover:transition-all hover:duration-400">
+              Tous
             </button>
-            <button className="hover:bg-sky-500 border border-sky-300 shadow-sky-900 shadow-md p-3 w-fit rounded-lg hover:transition-all hover:duration-400">
-              Tout les projets
-            </button>
-            <button className="hover:bg-sky-500 border border-sky-300 shadow-sky-900 shadow-md p-3 w-fit rounded-lg hover:transition-all hover:duration-400">
+            <button className=" hover:bg-slate-50 border border-slate-200 shadow-slate-900 shadow-sm text-white font-bold hover:text-black p-3 w-auto rounded-lg hover:transition-all hover:duration-400">
               Back-end
             </button>
-            <button className="hover:bg-sky-500 border border-sky-300 shadow-sky-900 shadow-md p-3 w-fit rounded-lg hover:transition-all hover:duration-400">
+            <button className="hover:bg-slate-50 border border-slate-200 shadow-slate-900 shadow-sm text-white font-bold hover:text-black p-3 w-auto rounded-lg hover:transition-all hover:duration-400">
+              Récents
+            </button>
+            <button className="hover:bg-slate-50 border border-slate-200 shadow-slate-900 shadow-sm text-white font-bold hover:text-black p-3 w-auto rounded-lg hover:transition-all hover:duration-400">
               Front-end
             </button>
-            <button className="hover:bg-sky-500 border border-sky-300 shadow-sky-900 shadow-md p-3 w-fit rounded-lg hover:transition-all hover:duration-400">
+            <button className="hover:bg-slate-50 border border-slate-200 shadow-slate-900 shadow-sm text-white font-bold hover:text-black p-3 w-auto rounded-lg hover:transition-all hover:duration-400">
               CMS
             </button>
-            <button className="hover:bg-sky-500 border border-sky-300 shadow-sky-900 shadow-md p-3 w-fit rounded-lg hover:transition-all hover:duration-400">
+            <button className="hover:bg-slate-50 border border-slate-200 shadow-slate-900 shadow-sm text-white font-bold hover:text-black p-3 w-auto rounded-lg hover:transition-all hover:duration-400">
               Divers
             </button>
           </div>
